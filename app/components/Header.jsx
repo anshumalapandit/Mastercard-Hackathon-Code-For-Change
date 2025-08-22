@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { UserButton, auth } from '@clerk/nextjs';
+import { UserButton} from '@clerk/nextjs';
+import { auth } from "@clerk/nextjs/server";
+
 
 const Header = async ({ username }) => {
   const { userId } = auth();
